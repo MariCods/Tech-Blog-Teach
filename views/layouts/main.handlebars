@@ -11,14 +11,16 @@
   <nav class="navbar">
     <li>
     <li class="li-nav-item"><a href="/login">Home</a></li>
-    <li class="li-nav-item"><a href="#">Dashboard</a></li>
-    <li class="li-nav-item"><a href="#" id="logout-link">Profile</a></li>
-    <li class="li-nav-item"><a href="#" id="logout-link">Logout</a></li>
+    <li class="li-nav-item"><a href="#" >Profile</a></li>
+    <li class="li-nav-item"><a href="#" >Logout</a></li>
     </li>
   </nav>
   <main class="main-section">
     {{{body}}}
   </main>
+{{#if logged_in}}
+  <script src="/js/logout.js"></script>
+  {{/if}}
 
 </body>
 
