@@ -41,10 +41,10 @@ const loginFmEventHandler = async (event) => {
 
 document 
 
-.querySelector('signup-form')
+.querySelector('.signup-form')
 .addEventListener('submit', signupFmEventHandler);
 
 document
 
-.querySelector('login-form')
+.querySelector('.login-form')
 .addEventListener('submit', loginFmEventHandler);
