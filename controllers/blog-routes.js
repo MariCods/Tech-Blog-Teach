@@ -2,9 +2,14 @@ const router = require('express').Router();
 const {Blog} = require('../models');
 const withAuth = require('../utils/auth');
 
-router.get('/blog', async(req,res) => {
+router.get('/blog', async (req, res) => {
     
     res.render('blog');
+});
+
+router.get('/dashboard', async (req, res) => {
+    
+  res.render('dashboard');
 });
 
 router.post('/blog', withAuth, async (req, res) => {

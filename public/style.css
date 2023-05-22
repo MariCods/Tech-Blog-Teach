@@ -16,10 +16,13 @@
    
   }
   
-  
+  body{
+    background-color: var(--quatrinary);
+  }
   header{
     margin-top: 2px; 
      padding: 3px; 
+     background-color: var(--quatrinary);
    
   }
 
@@ -47,6 +50,19 @@ h1{
     color: var(--secondary);
     text-decoration: underline;
    }
+
+   h5{
+    font-size: 25px;
+    text-align: center;
+    /* justify-content: center; */
+    color: var(--primary);
+  }
+  h6{
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+    color: var(--secondary);
+  }
  .navbar{
     /* font-weight: 200; */
     font-size: 15px;
@@ -61,6 +77,7 @@ h1{
     
     
  }
+
 
    .navbar .li-nav-item a {
     color:var(--primary); 
@@ -84,7 +101,7 @@ h1{
     margin-left: 2%;
     height: 40%;
     border-radius: 20px;
-   margin-bottom:2% ;
+    margin-bottom:2% ;
   }
 
   .column:hover{
@@ -140,5 +157,156 @@ h1{
     background-repeat: no-repeat;
   }
   
+  .account-block{
+    border: 2px solid var(--primary);
+    width: 35%;
+    height: max-content;
+    margin-left: 33%;
+    margin-top: 1%;
+   background-color: var(--secondary);
+   
+  }
+ .signup-form{
+  text-align: center;
+ }
  
+  .form-input{
+  border: 2px solid var(--primary);
+  border-radius: 5px;
+  font-size: 18px;
   
+ }
+
+ .btn-signup{
+  width:49%;
+  height: 27px;
+  background-color: var(--secondary);
+  border: 2px solid var(--primary);
+  border-radius: 5px;
+  color: white;
+ }
+
+ .btn-login{
+  width:49%;
+  height: 27px;
+  background-color: var(--secondary);
+  border: 2px solid var(--primary);
+  border-radius: 5px;
+  color: white;
+ }
+
+ .btn-signup:hover, .btn-login:hover{
+  color: var(--tertiary);
+  background-color: var(--primary);
+ }
+
+ .banner{
+  width: 100%;
+  height: 400px;
+  position: relative;
+  background: #e7e7e7;
+  background-size: cover;
+  background-position: center;
+}
+
+.banner-upload-btn{
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.banner-upload-btn img{
+  width: 20px;
+}
+
+.blog{
+  width: 70vw;
+  min-width: 400px;
+  height: 100px;
+  display: block;
+  margin: auto;
+  padding: 50px 0;
+}
+
+textarea::-webkit-scrollbar{
+  width: 10px;
+}
+
+textarea::-webkit-scrollbar-thumb{
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.title,
+.article{
+  width: 100%;
+  min-height: 100px;
+  height: auto;
+  outline: none;
+  font-size: 50px;
+  font-weight: 600;
+  color: #2d2d2d;
+  resize: none;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.title::placeholder,
+.article::placeholder{
+  color: #2d2d2d;
+}
+
+.article{
+  height: 500px;
+  font-size: 20px;
+  margin-top: 20px;
+  line-height: 30px;
+  font-weight: 500;
+  padding-bottom: 100px;
+  white-space: pre-wrap;
+}
+.banner-img-one{
+  width: 100%;
+  height: 400px;
+  background-image: url(/images/pexels-ash-376464.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.banner-img-two{
+  width: 100%;
+  height: 400px;
+  background-image: url(/images/pexels-christina-morillo-1181359.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.banner-img-three{
+  width: 100%;
+  height: 400px;
+  background-image: url(/images/pexels-david-bartus-586687.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.blog-section{
+padding: 0 70 20 70;
+}
+
+.blog-section p{
+  font-size: 20px;
+  line-height: 35px;
+  word-spacing: 5px;
+ 
+}
