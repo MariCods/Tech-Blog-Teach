@@ -197,7 +197,7 @@ h1{
 
  .btn-signup:hover, .btn-login:hover{
   color: var(--tertiary);
-  background-color: var(--primary);
+  background-color: blue;
  }
 
  .banner{

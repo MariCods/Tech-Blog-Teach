@@ -6,16 +6,16 @@ const newuserEmail = document.querySelector('#email-signup').value.trim();
 const newuserPassword = document.querySelector('#password-signup').value.trim();
 
 if(newuserName && newuserEmail && newuserPassword) {
-    const response = await fetch('/api/users/login', {
+    const response = await fetch('/api/users',{
         method: 'POST',
         body: JSON.stringify({name:newuserName, email:newuserEmail, password:newuserPassword}),
-        headers: {'Content-Type': 'applications/json'}
+        headers: {'Content-Type': 'application/json'}
     });
     if(response.ok){
         document.location.replace('/dashboard');
     }
         else {
-            alert(response.err);
+            alert(response.statusText);
         }
     }
 }
@@ -26,16 +26,16 @@ const loginFmEventHandler = async (event) => {
     const userPassword = document.querySelector('#password-login').value.trim();
     
     if(userEmail && userPassword) {
-        const response = await fetch('/api/users', {
+        const response = await fetch('/api/users/login', {
            method: 'POST',
            body: JSON.stringify({userEmail, userPassword}),
-           headers: {'Content-Type': 'applications/json'}
+           headers: {'Content-Type': 'application/json'}
         });
         if(response.ok){
             document.location.replace('/blog');
         }
         else {
-            alert('Sign in failure');
+            alert(response.statusText);
         }
     }
 }
