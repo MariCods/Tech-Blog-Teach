@@ -7,10 +7,10 @@ router.get('/', async (req, res) => {
     res.render('all');
 });
 
-router.get('/login', async (req, res) => {
+// router.get('/login', async (req, res) => {
 
-    res.render('login');
-});
+//     res.render('login');
+// });
 
 // router.get('/', async (req, res) => {
 //     try {
