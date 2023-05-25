@@ -24,7 +24,7 @@ const loginFmEventHandler = async (event) => {
     event.preventDefault();
     const userEmail = document.querySelector('#email-login').value.trim();
     const userPassword = document.querySelector('#password-login').value.trim();
-    
+    console.log(JSON.stringify({userEmail, userPassword}))
     if(userEmail && userPassword) {
         const response = await fetch('/api/users/login', {
            method: 'POST',
@@ -32,7 +32,7 @@ const loginFmEventHandler = async (event) => {
            headers: {'Content-Type': 'application/json'}
         });
         if(response.ok){
-            document.location.replace('/blog');
+            document.location.replace('/dashboard');
         }
         else {
             alert(response.statusText);

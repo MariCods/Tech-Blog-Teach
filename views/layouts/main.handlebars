@@ -12,12 +12,12 @@
   <nav class="navbar">
     <li>
     <li class="li-nav-item"><a href="/">Home</a></li>
-    <li class="li-nav-item"><a href="/blog" >Blog</a></li>
+    <li class="li-nav-item"><a href="/api/blog/blog" >Blog</a></li>
       {{#if logged_in}}
-        <li class="li-nav-item"><a href="/dashboard">My Dashboard</a></li> |
-       <li class="li-nav-item" id="logOut"></li><a href="/blog">Logout</a></li>
+        <li class="li-nav-item"><a href="/dashboard">MyDashboard</a></li> |
+       <li class="li-nav-item" id="logOut"><a>Logout</a></li>
         {{else}}
-        <li class="li-nav-item"></li><a href="/login">login</a></li>
+        <li class="li-nav-item"><a href="/login">login</a></li>
         {{/if}}
     </li>
   </nav>

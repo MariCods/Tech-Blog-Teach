@@ -15,11 +15,14 @@ const PORT = process.env.PORT || 3001;
 // The following two lines of code are setting Handlebars.js as the default template engine.
 app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
- app.use(express.static(path.join(__dirname, 'public')));
 
- 
+app.use(express.json())
+app.use(express.urlencoded({ extended: false }))
+app.use(express.static(path.join(__dirname, 'public')));
 
- const sess = {
+
+
+const sess = {
   secret: 'Super secret secret',
   cookie: {
     maxAge: 300000,
@@ -40,8 +43,8 @@ app.use(require('./controllers'))
 // Starts the server to begin listening
 
 
-  sequelize.sync({ force: false}).then(() => {
-    app.listen(PORT, () => {
-      console.log('Server listening on: http://localhost:' + PORT);
-    });
+sequelize.sync({ force: false }).then(() => {
+  app.listen(PORT, () => {
+    console.log('Server listening on: http://localhost:' + PORT);
   });
+});

@@ -19,11 +19,6 @@ Blog.init(
             type: DataTypes.STRING,
             allowNull:false,
         },
-
-        description: {
-            type: DataTypes.TEXT,
-            allowNull: true,
-        },
         body: {
             type: DataTypes.TEXT,
             allowNull: false,

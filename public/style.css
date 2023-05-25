@@ -246,7 +246,8 @@ textarea::-webkit-scrollbar-thumb{
 }
 
 .title,
-.article{
+.article
+.name{
   width: 100%;
   min-height: 100px;
   height: auto;
