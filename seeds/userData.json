@@ -1,5 +1,20 @@
 [
   {
+    "name":"test1",
+    "email":"email1@google.com",
+    "password":"test1234"
+    
+  },
+  {
+    "name":"test2",
+    "email":"email2@google.com",
+    "password":"test1234"
+    
+  },
+  {
+    "name":"test3",
+    "email":"email3@google.com",
+    "password":"test1234"
     
   }
   

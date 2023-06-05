@@ -1,6 +1,21 @@
 [
     {
-      
+      "blog_name":"JS library",
+      "author_name":"test1",
+      "body":"JQuery Angular REACTjs",
+      "user_id":1
+    },
+    {
+      "blog_name":"JS library",
+      "author_name":"test2",
+      "body":"JQuery Angular REACTjs",
+      "user_id":2
+    },
+    {
+      "blog_name":"JS library",
+      "author_name":"test3",
+      "body":"JQuery Angular REACTjs",
+      "user_id":3
     }
     
   ]
