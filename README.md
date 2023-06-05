@@ -55,7 +55,7 @@ https://github.com/MariCods/Tech-Blog-Teach
 
 [Deployed Link]
 
-https://puu-puu-texts-app.herokuapp.com/
+https://teach-blog-teach-app.herokuapp.com/
 # License
    
 [![License](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://opensource.org/licenses/MIT)
