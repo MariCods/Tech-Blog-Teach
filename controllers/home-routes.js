@@ -12,50 +12,6 @@ router.get('/login', async (req, res) => {
     res.render('login');
 });
 
-router.get('/', async (req, res) => {
-    try {
-        const blogData = await Blog.findAll({
-            include: [
-                {
-                    model: User,
-                    attributes: ['name'],
-                },
-            ],
-        });
-        const blogs = blogData.map((blog) => blog.get({ plain: true }));
-
-        // Pass serialized data and session flag into template
-        res.render('dashboard', { 
-          blogs, 
-          logged_in: req.session.logged_in 
-        });
-      } catch (err) {
-        res.status(500).json(err);
-      }
-    
-});
-
-router.get('/blog/:id', async (req, res) => {
-    try {
-      const blogData = await Blog.findByPk(req.params.id, {
-        include: [
-          {
-            model: User,
-            attributes: ['name'],
-          },
-        ],
-      });
-  
-      const blog = blogData.get({ plain: true });
-  
-      res.render('blogs', {
-        ...blog,
-        logged_in: req.session.logged_in
-      });
-    } catch (err) {
-      res.status(500).json(err);
-    }
-  });
   
   // Use withAuth middleware to prevent access to route
   router.get('/dashboard', withAuth, async (req, res) => {
